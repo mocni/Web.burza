@@ -23,6 +23,11 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    @include element('left'){
+        @media(min-width: $container){
+            margin-left: 30px;
+        }
+    }
 }
 
 .col {
