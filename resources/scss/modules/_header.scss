@@ -22,6 +22,12 @@
             &:hover{
                 box-shadow: inset 0 100px 9px -7px $yellow;
             }
+            @include modifier('middle'){
+                justify-content: center;
+            }
+            @include modifier('right'){
+                justify-content: flex-end;
+            }
             @media(max-width: $containerSmall){
                 font-size: 20px;
             }

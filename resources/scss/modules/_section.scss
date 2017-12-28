@@ -39,6 +39,10 @@
         @include modifier('desc') {
             text-align: center;
             margin-bottom: 50px;
+            font-size: 17px;
+        }
+        .btn{
+            max-width: 370px;
         }
         @media(max-width: $containerMiddle) {
             .section__logo {
