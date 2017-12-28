@@ -1,0 +1,66 @@
+.section {
+    padding: 50px 0;
+    @include element('title') {
+        color: #fff;
+        font-size: 64px;
+        text-align: center;
+        margin: 0 0 50px 0;
+        font-family: 'FuturaMedium';
+        @include modifier('image') {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media(max-width: $containerMiddle) {
+                flex-direction: column;
+            }
+            @include modifier('center') {
+                justify-content: center;
+                font-size: 72px;
+                img {
+                    margin: 0 40px;
+                }
+            }
+        }
+    }
+    @include element('image') {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    @include element('devs') {
+        background-image: url('../../resources/img/devs-overlay.jpg');
+    }
+    @include element('footer') {
+        background-image: url('../../resources/img/footer-overlay.jpg');
+    }
+    @include element('hero') {
+        background-image: url('../../resources/img/hero-overlay.jpg');
+        padding: 80px 0;
+        @include modifier('desc') {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        @media(max-width: $containerSmall) {
+            .section__logo {
+                img {
+                    margin: 20px 0 5px 0;
+                }
+            }
+        }
+    }
+    @include element('logo') {
+        display: flex;
+        margin-bottom: 120px;
+        justify-content: center;
+        align-items: center;
+        @include modifier('image') {
+            max-height: 50px;
+            margin: 0 15px;
+        }
+        span {
+            font-family: $fontLato;
+            font-size: 50px;
+            color: #ffff;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.header {
+    background: $black;
+    width: 100%;
+    z-index: 3;
+    @include element('fixed'){
+        position: fixed;
+        top: 0;
+    }
+    @include element('list') {
+        display: flex;
+        width: 100%;
+        @include modifier('item') {
+            flex: 1;
+        }
+        @include modifier('link') {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 36px;
+            font-family: 'FuturaMedium';
+            &:hover{
+                box-shadow: inset 0 100px 9px -7px $yellow;
+            }
+            @media(max-width: $containerSmall){
+                font-size: 20px;
+            }
+        }
+    }
+}

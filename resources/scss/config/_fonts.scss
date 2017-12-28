@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../../resources/font/bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('../../resources/font/medium.ttf') format('truetype');
+    font-weight: medium;
+    font-style: medium;
+}
+
+$fontDev: 'Open Sans', sans-serif;
+$fontLato: 'Lato', sans-serif;

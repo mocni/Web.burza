@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'FuturaBold';
+  src: url("../../resources/font/bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url("../../resources/font/medium.ttf") format("truetype");
+  font-weight: medium;
+  font-style: medium; }
+
+.list {
+  padding: 0;
+  margin: 0; }
+  .list__unstyled {
+    list-style-type: none; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0; }
+
+.btn {
+  border: 0;
+  width: 100%; }
+  .btn__primary {
+    background: #ffec27;
+    color: #000000;
+    font-size: 20px;
+    padding: 20px 0;
+    cursor: pointer;
+    outline: none;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'FuturaMedium';
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .btn__primary:hover {
+      -webkit-box-shadow: inset 0 100px 9px -7px #000000;
+      box-shadow: inset 0 100px 9px -7px #000000;
+      color: #fff; }
+
+.img {
+  max-width: 100%;
+  height: auto; }
+  .img__round {
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 100px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  max-width: 1200px; }
+  @media (max-width: 1250px) {
+    .container {
+      max-width: 992px;
+      padding: 0 15px; } }
+  .container__small {
+    max-width: 500px; }
+    @media (max-width: 550px) {
+      .container__small {
+        max-width: 100%;
+        padding: 0 15px; } }
+  .container__middle {
+    max-width: 660px; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.col {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px; }
+  .col__content {
+    padding: 0 20px; }
+    .col__content--title {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      margin: 0 0 20px 0; }
+    .col__content--desc {
+      font-size: 16px; }
+  @media (max-width: 767px) {
+    .col {
+      -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+      flex: 100%; } }
+  @media (max-width: 500px) {
+    .col {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; }
+      .col img {
+        margin-bottom: 20px; } }
+
+.header {
+  background: #000000;
+  width: 100%;
+  z-index: 3; }
+  .header__fixed {
+    position: fixed;
+    top: 0; }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .header__list--item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .header__list--link {
+      height: 80px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #fff;
+      font-size: 36px;
+      font-family: 'FuturaMedium'; }
+      .header__list--link:hover {
+        -webkit-box-shadow: inset 0 100px 9px -7px #ffec27;
+        box-shadow: inset 0 100px 9px -7px #ffec27; }
+      @media (max-width: 500px) {
+        .header__list--link {
+          font-size: 20px; } }
+
+.section {
+  padding: 50px 0; }
+  .section__title {
+    color: #fff;
+    font-size: 64px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-family: 'FuturaMedium'; }
+    .section__title--image {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media (max-width: 660px) {
+        .section__title--image {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+      .section__title--image--center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 72px; }
+        .section__title--image--center img {
+          margin: 0 40px; }
+  .section__image {
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+  .section__devs {
+    background-image: url("../../resources/img/devs-overlay.jpg"); }
+  .section__footer {
+    background-image: url("../../resources/img/footer-overlay.jpg"); }
+  .section__hero {
+    background-image: url("../../resources/img/hero-overlay.jpg");
+    padding: 80px 0; }
+    .section__hero--desc {
+      text-align: center;
+      margin-bottom: 50px; }
+    @media (max-width: 500px) {
+      .section__hero .section__logo img {
+        margin: 20px 0 5px 0; } }
+  .section__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 120px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .section__logo--image {
+      max-height: 50px;
+      margin: 0 15px; }
+    .section__logo span {
+      font-family: "Lato", sans-serif;
+      font-size: 50px;
+      color: #ffff; }
+
+.input {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  outline: none;
+  background: #fff;
+  font-size: 16px;
+  color: #888888;
+  padding: 15px 0;
+  border: 1px solid;
+  font-family: "Open Sans", sans-serif;
+  resize: none; }
+
+.copyright {
+  background: #000000;
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .copyright__desc {
+    font-size: 12px;
+    margin: 25px 0 0 0;
+    text-align: center; }
+
+.message {
+  text-align: center;
+  margin-top: 20px; }
+  .message__error {
+    color: red; }
+  .message__success {
+    color: #000000; }
